@@ -1,0 +1,37 @@
+{
+    "name": "Param",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "value",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "report",
+            "otherEntityRelationshipName": "param",
+            "relationshipName": "reportParam",
+            "otherEntityField": "name"
+        }
+    ],
+    "changelogDate": "20190413094641",
+    "entityTableName": "param",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

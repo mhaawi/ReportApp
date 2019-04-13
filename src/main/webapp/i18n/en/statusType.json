@@ -1,0 +1,10 @@
+{
+    "reportApp": {
+        "StatusType": {
+            "null": "",
+            "UNDER_CONSTRUCTION": "UNDER_CONSTRUCTION",
+            "OLD": "OLD",
+            "NEW": "NEW"
+        }
+    }
+}

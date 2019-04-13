@@ -1,0 +1,40 @@
+
+
+
+entity Report  (report) {
+    name String required 
+    status StatusType required
+    date ZonedDateTime required
+    
+
+}
+entity Param  (param) {
+    name String required 
+    value String required 
+}
+
+relationship OneToMany{ 
+  Report to Param{reportParam(name)}
+  
+}
+
+//////enums /////
+enum StatusType{
+	UNDER_CONSTRUCTION, OLD , NEW    
+}
+
+
+
+
+////////////////////////////
+paginate Report with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+// Set service optionsto all except SourceType, APIType, ParamType
+service all with serviceImpl 
+//microservice * with notification
+
+//microservice * 
+// Set an angular suffix 
+// angularSuffix * with mySuffix
